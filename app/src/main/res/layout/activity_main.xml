@@ -8,10 +8,13 @@
     tools:context=".MainActivity">
 
     <ListView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:id="@+id/listaEtapas"
+        android:layout_width="398dp"
+        android:layout_height="636dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

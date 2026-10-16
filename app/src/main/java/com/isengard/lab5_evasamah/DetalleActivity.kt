@@ -12,7 +12,7 @@ class DetalleActivity : AppCompatActivity() {
         val nombre = intent.getStringExtra("EXTRA_NOMBRE") ?: "Desconocido"
         val peligro = intent.getStringExtra("EXTRA_PELIGRO") ?: "Desconocido"
 
-        findViewById<TextView>(R.id.tvDetalleNombre).text = nombre
-        findViewById<TextView>(R.id.tvDetallePeligro).text = "Nivel de peligro: $peligro"
+        findViewById<TextView>(R.id.txDetalleNombre).text = nombre
+        findViewById<TextView>(R.id.txDetallePeligro).text = "Nivel de peligro: $peligro"
     }
 }
