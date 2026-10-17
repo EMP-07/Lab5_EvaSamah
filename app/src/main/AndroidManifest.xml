@@ -11,13 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab5_EvaSamah">
-        <activity android:name=".MainActivity" android:exported="false" />
-        <activity android:name=".SplashActivity" android:exported="true">
+
+        <activity android:name=".SplashActivity" android:exported="true" android:theme="@style/Theme.Lab5_EvaSamah.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 2. Resto de actividades -->
+        <activity android:name=".MainActivity" android:exported="false" />
         <activity android:name=".DetalleActivity" android:exported="false" />
     </application>
 

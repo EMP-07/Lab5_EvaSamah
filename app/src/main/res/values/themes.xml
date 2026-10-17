@@ -1,9 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Lab5_EvaSamah" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- Tema con ActionBar: necesario para que se vea el Menú de Opciones -->
+    <style name="Base.Theme.Lab5_EvaSamah" parent="Theme.Material3.DayNight">
     </style>
-
     <style name="Theme.Lab5_EvaSamah" parent="Base.Theme.Lab5_EvaSamah" />
+    <!-- Para que no se vea la barra superior ponemos "NoActionBar" -->
+    <style name="Theme.Lab5_EvaSamah.Splash" parent="Theme.Material3.DayNight.NoActionBar" />
 </resources>

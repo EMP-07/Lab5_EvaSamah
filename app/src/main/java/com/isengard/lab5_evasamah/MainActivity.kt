@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val etapas = findViewById<ListView>(R.id.listaEtapas)
+        val lvEtapas = findViewById<ListView>(R.id.listaEtapas)
 
         listEtapas = listOf(
             Etapa("La Comarca", "Baja", android.R.drawable.ic_menu_myplaces),
@@ -35,14 +35,13 @@ class MainActivity : AppCompatActivity() {
             Etapa("Mordor", "Extrema", android.R.drawable.ic_menu_mapmode)
         )
 
-        etapas.adapter = EtapaAdapter(this, listEtapas)
-        registerForContextMenu(etapas)
+        lvEtapas.adapter = EtapaAdapter(this, listEtapas)
+        registerForContextMenu(lvEtapas)
     }
 
     // Menu de opciones (barra de arriba)
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-       // menuInflater.inflate(R.menu.menu_principal, menu)
-        menu?.add(0, 1, 0,"Abandonar")
+       menuInflater.inflate(R.menu.menu_principal, menu)
         return true
     }
 
